@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d6e1811e-2c06-4b33-ad1a-760716476e74/resourceGroups/ionic-app-1_group/providers/Microsoft.Web/sites/ionic-app-1",
+    "appService.deploySubpath": "."
+}
