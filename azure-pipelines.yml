@@ -16,10 +16,14 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    echo 'Installing Ionic CLI'
     npm install -g @ionic/cli@<version_deseada>
+    echo 'Installing project dependencies'
     npm install
+    echo 'Building Ionic project'
     ionic build --prod
   displayName: 'npm install and build'
+
 
 - script: echo 'Show Ionic version and environment info' && ionic info
   displayName: 'Show Ionic version and environment info'
