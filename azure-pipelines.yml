@@ -1,5 +1,5 @@
-# Node.js with Angular
-# Build a Node.js project that uses Angular.
+# Node.js with Ionic
+# Build an Ionic project.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
@@ -16,7 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g @angular/cli
+    npm install -g @ionic/cli@<version_deseada>
     npm install
-    ng build 
+    ionic build --prod
   displayName: 'npm install and build'
+
+- script: echo 'Show Ionic version and environment info' && ionic info
+  displayName: 'Show Ionic version and environment info'
